@@ -1,0 +1,65 @@
+print("welcome to python quiz")
+user=input("if you want to play it? ")
+if user.lower()!="yes":
+    quit("thank you")
+else:
+    print("let play it and develop your basic python knowledge ")
+print("\n")
+score=0
+quiz1=input('''what will output of followingg code
+print(2**3+(5+6)**(1+1)) ? ''')
+if quiz1.lower()=="129":
+    print("correct!")
+    score+=1
+
+else:
+    print("incorrect")
+print("\n")
+
+quiz2=input('''what will output of followingg code
+def solve(a,b):
+    return b if a==0 else solve(b%a,a))
+print(solve(20,50)) ? ''')
+if quiz2.lower()=="10":
+    print("correct!")
+    score+=1
+
+else:
+    print("incorrect")
+print("\n")
+quiz3=input('''give result of following expression
+2**3+5**2 ? ''')
+if quiz3.lower()=="33":
+    print("correct!")
+    score+=1
+else:
+    print("incorrect")
+print("\n")
+quiz4=input('''give result of following expression
+i=0
+while i<5:
+    print(i)
+    i+=1
+    if i==3:
+        break
+else:
+    print(0) ? ''')
+if quiz3.lower()=="012":
+    print("correct!")
+    score+=1
+else:
+    print("incorrect")
+print("\n")
+quiz3=input('''give result of following expression
+round(4.576) ? ''')
+if quiz3.lower()=="5":
+    print("correct!")
+    score+=1
+else:
+    print("incorrect")
+
+
+
+print("you got\t"+str(score)+"\tquestions out of 5 question")
+
+
